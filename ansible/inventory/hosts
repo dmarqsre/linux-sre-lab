@@ -1,0 +1,6 @@
+[linux]
+linux01 ansible_host=192.168.0.113
+linux02 ansible_host=192.168.0.114
+
+[linux:vars]
+ansible_user=dmarq

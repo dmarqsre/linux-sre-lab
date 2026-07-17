@@ -1,0 +1,12 @@
+*.retry
+*.log
+*.tmp
+*.swp
+*.swo
+.vault_pass
+*.pem
+*.key
+__pycache__/
+.terraform/
+terraform.tfstate
+terraform.tfstate.*

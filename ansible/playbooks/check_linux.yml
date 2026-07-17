@@ -1,0 +1,36 @@
+---
+- name: Checklist básico dos servidores Linux
+  hosts: linux
+  gather_facts: true
+
+  tasks:
+    - name: Exibir hostname
+      ansible.builtin.debug:
+        var: ansible_hostname
+
+    - name: Verificar uptime
+      ansible.builtin.command: uptime
+      register: uptime_result
+      changed_when: false
+
+    - name: Exibir uptime
+      ansible.builtin.debug:
+        var: uptime_result.stdout
+
+    - name: Verificar filesystems
+      ansible.builtin.command: df -hP
+      register: filesystem_result
+      changed_when: false
+
+    - name: Exibir filesystems
+      ansible.builtin.debug:
+        var: filesystem_result.stdout_lines
+
+    - name: Verificar memória
+      ansible.builtin.command: free -m
+      register: memory_result
+      changed_when: false
+
+    - name: Exibir memória
+      ansible.builtin.debug:
+        var: memory_result.stdout_lines
