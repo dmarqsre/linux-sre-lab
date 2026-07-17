@@ -34,3 +34,4 @@ Laboratório prático de estudos em SRE, Linux e automação.
 - Inventory Ansible configurado
 - Ansible ping validado em linux01 e linux02
 
+## Projeto em Desenvolvimento.
