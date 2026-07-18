@@ -1,8 +1,8 @@
-# Linux SRE Lab
+# TESTE CONFLITO 2 
 
 Laboratório prático de estudos em SRE, Linux e automação.
 
-### Ambiente ###
+## Ambiente ##
 
 - Proxmox
 - Rocky Linux 9
